@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+
+</head>
+<body>
+    <h2>Personal Expense Tracker</h2>
+    <div class="container">
+        <section class="form-container">
+            <h3>Add Expense</h3>
+            <form id="expenseForm">
+                <input type="text" id="description" placeholder="Description" required>
+                <input type="number" id="amount" placeholder="Amount" required>
+                <select id="category">
+                    <option value="Food">Food</option>
+                    <option value="Transport">Transport</option>
+                    <option value="Entertainment">Entertainment</option>
+                </select>
+                <input type="date" id="date" max="2025-12-31" required>
+                <button type="submit">Add Expense</button>
+            </form>
+        </section>
+        <section class="table-container">
+            <h3>Expense List</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Description</th>
+                        <th>Amount</th>
+                        <th>Category</th>
+                        <th>Date</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="expenseList">
+                </tbody>
+            </table>
+        </section>
+    </div>
+    <script src="script.js">
+        
+    </script>
+</body>
+</html>
